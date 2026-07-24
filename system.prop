@@ -1,0 +1,6 @@
+#Infinity Flags
+ro.product.marketname=Lenovo Legion Tab Gen 2
+ro.infinity.soc=Snapdragon 8+ Gen 1
+ro.infinity.battery=6550 mAh
+ro.infinity.display=2560 x 1600, 144 Hz
+ro.infinity.camera=13MP + 2MP

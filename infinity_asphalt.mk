@@ -9,17 +9,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/infinity/config/common_full_tablet_wifionly.mk)
 
 # Inherit from asphalt device.
 $(call inherit-product, device/lenovo/asphalt/device.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := asphalt
-PRODUCT_NAME := lineage_asphalt
+PRODUCT_NAME := infinity_asphalt
 PRODUCT_BRAND := lenovo
 PRODUCT_MODEL := TB320FC
 PRODUCT_MANUFACTURER := lenovo
+
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := "soyab"
+TARGET_BOOT_ANIMATION_RES := 1440
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc=$(call normalize-path-list, "Lenovo TB320FC TB320FC 15 AQ3A.240812.002 ZUI_17.0.339_251219_ROW user release-keys")
