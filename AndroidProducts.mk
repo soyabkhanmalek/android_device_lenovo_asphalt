@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_asphalt.mk
+    $(LOCAL_DIR)/lineage_asphalt.mk
